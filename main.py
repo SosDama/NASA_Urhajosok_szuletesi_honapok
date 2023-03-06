@@ -24,7 +24,7 @@ def find_most_commonests(d):
             if val[0] > max_val[0]:
                 max_val = val
                 max_key = key
-        common_months.append((max_key, str(max_val[1])))
+        common_months.append((max_key, max_val[1]))
         del d[max_key]
     return common_months
 
